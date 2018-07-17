@@ -1,0 +1,103 @@
+.para {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    .para-box {
+      background-color: #212121;
+      border-radius: 7px;
+      opacity: .85;
+      height: 360px;
+      width: 650px;
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
+      h1 {
+        padding: 10%;
+        margin: auto;
+        color: white;
+        font-size: 1.4rem;
+        text-align: center;
+      }
+    }
+    &.og-specs {
+        background-image: url('../img/flightsky.jpg');
+        @media only screen and (max-width: 500px) {
+          background-image: url('../../img/banner-poly.svg');
+        }
+        .specs {
+          margin-left: auto;
+          margin-right: 10vh;
+          margin-top: 30vh;
+          .specs-heading {
+            padding: 10px 0px 0px 0px;
+            font-size: 2rem;
+            margin: 0;
+            span {
+              color: ccff99;
+            }
+          }
+          .specs-body {
+            font-size: 1rem;
+            padding: 10px 30px 10px 30px;
+            margin: 0;
+            text-align: left;
+            span {
+              color: #ccff99;
+            }
+          }
+          .specs-list li {
+            margin: 0 10% 0 10%;
+            color: #ccff99;
+            font-family: 'Kanit', sans-serif;
+            font-size: 1.1rem;
+            list-style-type: circle;
+          }
+        }
+      }
+      &.og-future {
+        background-image: url('../img/bg-highres.jpg');
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
+        .future {
+          margin-right: auto;
+          margin-left: 10vh;
+          margin-top: 30vh;
+        }
+      }
+    }
+    
+    .box.cta {
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+    }
+    
+    .intro-text {
+      padding-right: 5px !important;
+      .title {
+        letter-spacing: 1px;
+        padding-right: 2px;
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        text-align: center;
+        span {
+          color: #ccff99;
+        }
+      }
+      .subtitle {
+        text-align: justify;
+      }
+    }
+    
+    .first-slide{
+        background-image: url('../img/flightsky.jpg');
+    }
+
+    .second-slide{
+        background-image: url('../img/flightsky.jpg');
+        img.baby{
+            max-width:1080px;
+        }
+    }
+    
